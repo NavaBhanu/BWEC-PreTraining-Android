@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:bhanu="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    bhanu:layout_width="wrap_content"
+    bhanu:layout_height="match_parent"
+    bhanu:paddingBottom="50dp"
+    bhanu:paddingLeft="@dimen/activity_horizontal_margin"
+    bhanu:paddingRight="@dimen/activity_horizontal_margin"
+    bhanu:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bhanu.sample.MainActivity1"
+    bhanu:id="@+id/OK"
+    bhanu:background="@drawable/pic2">
+
+    <TextView
+        bhanu:layout_width="wrap_content"
+        bhanu:layout_height="wrap_content"
+        bhanu:text="Android Palette"
+        bhanu:id="@+id/textView"
+        bhanu:background="@android:drawable/button_onoff_indicator_on"
+        bhanu:longClickable="false"
+        bhanu:linksClickable="false"
+        bhanu:textColor="@android:color/holo_red_dark"
+        bhanu:textSize="50sp"
+        bhanu:layout_alignParentRight="true"
+        bhanu:layout_alignParentEnd="true" />
+
+    <ImageButton
+        bhanu:layout_width="wrap_content"
+        bhanu:layout_height="wrap_content"
+        bhanu:id="@+id/imageButton"
+        bhanu:src="@drawable/pic1"
+        bhanu:layout_alignParentStart="true" />
+
+    <ImageView
+        bhanu:layout_width="wrap_content"
+        bhanu:layout_height="wrap_content"
+        bhanu:id="@+id/imageView"
+        bhanu:src="@drawable/plane"
+        bhanu:layout_alignParentLeft="true"
+        bhanu:layout_alignParentStart="true"
+        bhanu:layout_toStartOf="@+id/button"
+        bhanu:layout_alignParentBottom="true"
+        bhanu:layout_below="@+id/imageButton"
+        bhanu:layout_alignRight="@+id/button2"
+        bhanu:layout_alignEnd="@+id/button2" />
+
+    <Button
+        bhanu:layout_width="wrap_content"
+        bhanu:layout_height="wrap_content"
+        bhanu:text="Next"
+        bhanu:id="@+id/button"
+        bhanu:textSize="70dp"
+        bhanu:background="@android:color/darker_gray"
+        bhanu:layout_alignParentRight="true"
+        bhanu:layout_alignParentEnd="true"
+        bhanu:layout_alignBottom="@+id/imageButton" />
+
+    <Button
+        bhanu:layout_width="wrap_content"
+        bhanu:layout_height="wrap_content"
+        bhanu:text="Prev"
+        bhanu:id="@+id/button2"
+        bhanu:textSize="70dp"
+        bhanu:background="@android:color/darker_gray"
+        bhanu:layout_width="wrap_content"
+        bhanu:layout_height="wrap_content"
+        bhanu:layout_alignOf="@+id/imageButton"
+        bhanu:layout_alignBottom="@+id/imageButton"
+        bhanu:layout_alignLeft="@+id/textView"
+        bhanu:layout_alignStart="@+id/textView" />
+
+    <RadioButton
+        bhanu:layout_width="wrap_content"
+        bhanu:layout_height="wrap_content"
+        bhanu:text="Option1"
+        bhanu:id="@+id/radioButton"
+        bhanu:textColor="@android:color/holo_orange_light"
+        bhanu:textSize="20dp"
+        bhanu:layout_alignTop="@+id/imageView"
+        bhanu:layout_alignLeft="@+id/button"
+        bhanu:layout_alignStart="@+id/button" />
+
+    <RadioButton
+        bhanu:layout_width="wrap_content"
+        bhanu:layout_height="wrap_content"
+        bhanu:text="Option2"
+        bhanu:id="@+id/radioButton2"
+        bhanu:layout_alignRight="@+id/radioButton"
+        bhanu:layout_alignEnd="@+id/radioButton"
+        bhanu:textColor="@android:color/holo_orange_light"
+        bhanu:textSize="20dp"
+        bhanu:layout_below="@+id/radioButton" />
+
+    <CheckBox
+        bhanu:layout_width="wrap_content"
+        bhanu:layout_height="wrap_content"
+        bhanu:text="Choice1"
+        bhanu:id="@+id/checkBox"
+        bhanu:textColor="@android:color/holo_orange_light"
+        bhanu:textSize="20dp"
+        bhanu:layout_below="@+id/radioButton2"
+        bhanu:layout_alignLeft="@+id/radioButton2"
+        bhanu:layout_alignStart="@+id/radioButton2" />
+
+    <CheckBox
+        bhanu:layout_width="wrap_content"
+        bhanu:layout_height="wrap_content"
+        bhanu:text="Choice2"
+        bhanu:id="@+id/checkBox2"
+        bhanu:textColor="@android:color/holo_orange_light"
+        bhanu:textSize="20dp"
+        bhanu:layout_below="@+id/checkBox"
+        bhanu:layout_alignLeft="@+id/checkBox"
+        bhanu:layout_alignStart="@+id/checkBox" />
+
+    <EditText
+        bhanu:layout_width="wrap_content"
+        bhanu:layout_height="wrap_content"
+        bhanu:inputType="date"
+        bhanu:ems="10"
+        bhanu:id="@+id/editText"
+        bhanu:text="dd/mm/yyyy"
+        bhanu:textColor="@android:color/black"
+        bhanu:textSize="30dp"
+        bhanu:layout_alignBottom="@+id/imageView"
+        bhanu:layout_alignParentRight="true"
+        bhanu:layout_alignParentEnd="true"
+        bhanu:layout_alignLeft="@+id/textClock"
+        bhanu:layout_alignStart="@+id/textClock" />
+
+    <TextClock
+        bhanu:layout_width="wrap_content"
+        bhanu:layout_height="wrap_content"
+        bhanu:id="@+id/textClock"
+        bhanu:editable="false"
+        bhanu:enabled="false"
+        bhanu:text="15:30"
+        bhanu:textColor="@color/colorPrimaryDark"
+        bhanu:background="@android:color/secondary_text_dark_nodisable"
+        bhanu:layout_alignLeft="@+id/checkBox2"
+        bhanu:layout_alignStart="@+id/checkBox2"
+        bhanu:layout_below="@+id/checkBox2"
+        bhanu:layout_alignRight="@+id/checkBox2"
+        bhanu:layout_alignEnd="@+id/checkBox2" />
+
+
+</RelativeLayout>
